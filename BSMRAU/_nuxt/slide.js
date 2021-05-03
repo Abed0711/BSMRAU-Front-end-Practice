@@ -1,39 +1,38 @@
-const datas = [
-    {
+const datas = [{
         slideImage: "1.jpg",
-        heading: "heading 1",
-        teacherImage: "person.png",
-        teacherName: "name",
+        heading: "Book Of Research Abstract 2018",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
     },
     {
         slideImage: "2.jpg",
-        heading: "heading 2",
-        teacherImage: "person.png",
-        teacherName: "name",
+        heading: "Book Of Research Abstract 2018-2019",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
     },
     {
-        slideImage: "1.jpg",
-        heading: "heading 3",
-        teacherImage: "person.png",
-        teacherName: "name",
-    },
-    {
-        slideImage: "2.jpg",
-        heading: "heading 4",
-        teacherImage: "person.png",
-        teacherName: "name",
-    },
-    {
-        slideImage: "1.jpg",
-        heading: "heading 5",
-        teacherImage: "person.png",
-        teacherName: "name",
+        slideImage: "3.jpg",
+        heading: "Book Of Research Abstract 2019",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
     },
     {
         slideImage: "2.jpg",
-        heading: "heading 6",
-        teacherImage: "person.png",
-        teacherName: "name",
+        heading: "Book Of Research Abstract 2018-2019",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
+    },
+    {
+        slideImage: "1.jpg",
+        heading: "Book Of Research Abstract 2018",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
+    },
+    {
+        slideImage: "3.jpg",
+        heading: "Book Of Research Abstract 2019",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
     },
     // { slideImage: "", heading: "", teacherImage: "", teacherName: "" },
     // { slideImage: "", heading: "", teacherImage: "", teacherName: "" },
@@ -49,7 +48,7 @@ window.addEventListener("resize", displayMenuItems());
 
 function displayMenuItems() {
     let id = 0;
-    let displayMenu = datas.map(function (item) {
+    let displayMenu = datas.map(function(item) {
         return `    <div id='A${id++}' class="card-slide">
         <img class="card-image" src=${item.slideImage} alt="" />
         <div class="heading">
@@ -99,17 +98,17 @@ function displayMenuItems() {
     count = 0;
     size = card[0].clientWidth + 10;
 
-    window.addEventListener("resize", function () {
+    window.addEventListener("resize", function() {
         slideCards.style.transition = "none";
         size = card[0].clientWidth + 10;
     });
 
     let timeout = setInterval(change, 2000);
 
-    slideCards.addEventListener("mouseover", function () {
+    slideCards.addEventListener("mouseover", function() {
         clearInterval(timeout);
     });
-    slideCards.addEventListener("mouseout", function () {
+    slideCards.addEventListener("mouseout", function() {
         timeout = setInterval(change, 2000);
     });
 
