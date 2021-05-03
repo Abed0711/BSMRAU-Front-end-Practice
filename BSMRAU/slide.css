@@ -82,6 +82,8 @@
 
 .slides-container {
     width: 1085px;
+    border: 2px solid red;
+
     margin: auto;
     overflow: hidden;
 }
@@ -115,10 +117,10 @@ hr {
 
 @media (max-width: 1740px) {
     .card-slide {
-        width: 259px;
+        width: 260px;
     }
     .card-slide .card-image {
-        width: 259px;
+        width: 260px;
     }
 }
 @media (max-width: 1409px) {
