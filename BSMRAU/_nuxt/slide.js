@@ -1,7 +1,11 @@
+<<<<<<< Updated upstream
 // For Slider //
 
 const datas = [
     {
+=======
+const datas = [{
+>>>>>>> Stashed changes
         slideImage: "1.jpg",
         heading: "Book Of Research Abstract 2018",
         teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
@@ -57,7 +61,7 @@ window.addEventListener("DOMContentLoaded", displayMenuItems());
 
 function displayMenuItems() {
     let id = 0;
-    let displayMenu = datas.map(function (item) {
+    let displayMenu = datas.map(function(item) {
         return `    <div id='A${id++}' class="card-slide">
         <img class="card-image" src=${item.slideImage} alt="" />
         <div class="heading">
@@ -108,14 +112,14 @@ function displayMenuItems() {
     size = card[0].clientWidth + 10;
     let timeout = setInterval(change, 2000);
 
-    window.addEventListener("resize", function () {
+    window.addEventListener("resize", function() {
         size = card[0].clientWidth + 10;
     });
 
-    slideCards.addEventListener("mouseover", function () {
+    slideCards.addEventListener("mouseover", function() {
         clearInterval(timeout);
     });
-    slideCards.addEventListener("mouseout", function () {
+    slideCards.addEventListener("mouseout", function() {
         timeout = setInterval(change, 2000);
     });
 
@@ -136,6 +140,7 @@ function displayMenuItems() {
             slideCards.style.transform = "translateX(" + -size * count + "px)";
         }
     });
+<<<<<<< Updated upstream
 }
 
 // For Notice //
@@ -207,3 +212,6 @@ let display = datas2.map(function (items) {
 
 display = display.join("");
 pushNotice.innerHTML = display;
+=======
+}
+>>>>>>> Stashed changes
