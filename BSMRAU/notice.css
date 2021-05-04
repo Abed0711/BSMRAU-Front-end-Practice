@@ -1,0 +1,39 @@
+.notice-cover {
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    padding: 20px;
+    background: #ffffff;
+    max-width: 500px;
+}
+.notice-date {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #62c2ff;
+    font-weight: 500;
+}
+.notice-details {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.notice-button button {
+    outline: none;
+    border: none;
+    background: #f4e90a;
+    border-radius: 20px;
+    padding: 8px 25px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.439);
+    transition: 0.5s;
+}
+
+.notice-button button:hover {
+    box-shadow: 1px 3px 5px 1px rgba(128, 128, 128, 0.693);
+}
+
+svg {
+    width: 11px;
+    margin-left: 8px;
+    fill: #62c2ff;
+}

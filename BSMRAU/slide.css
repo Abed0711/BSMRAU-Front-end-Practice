@@ -17,7 +17,7 @@
     display: inline;
 }
 
-.arrow {
+.arrow-card {
     background: #000;
     position: absolute;
     top: 50%;
@@ -26,28 +26,28 @@
     transition: 0.3s;
 }
 
-.arrow:nth-child(1) {
+.arrow-card:nth-child(1) {
     width: 10px;
     height: 1px;
     right: 0;
     transform: translateX(1px);
 }
 
-.arrow:nth-child(2) {
+.arrow-card:nth-child(2) {
     width: 5px;
     height: 1px;
     right: 0;
     transform: rotate(45deg) translateY(-3px);
 }
 
-.arrow:nth-child(3) {
+.arrow-card:nth-child(3) {
     width: 5px;
     height: 1px;
     right: 0;
     transform: rotate(-45deg) translateY(3px) translateX(0px);
 }
 
-.fotter-cover:hover .arrow {
+.fotter-cover:hover .arrow-card {
     margin-right: 10px;
 }
 
@@ -82,8 +82,6 @@
 
 .slides-container {
     width: 1085px;
-    border: 2px solid red;
-
     margin: auto;
     overflow: hidden;
 }

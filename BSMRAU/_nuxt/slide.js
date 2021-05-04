@@ -1,3 +1,5 @@
+// For Slider //
+
 const datas = [
     {
         slideImage: "1.jpg",
@@ -70,9 +72,9 @@ function displayMenuItems() {
             <div class="fotter-cover">
                 <a class="read-more" href="${item.pdf}"> READ MORE </a>
                 <div class="span-arrow">
-                    <span class="arrow"></span>
-                    <span class="arrow"></span>
-                    <span class="arrow"></span>
+                    <span class="arrow-card"></span>
+                    <span class="arrow-card"></span>
+                    <span class="arrow-card"></span>
                 </div>
             </div>
         </div>
@@ -135,3 +137,73 @@ function displayMenuItems() {
         }
     });
 }
+
+// For Notice //
+
+const datas2 = [
+    {
+        date: "28 April 2021",
+        details: `details Lorem ipsum, dolor sit amet consectetur
+adipisicing elit. Eligendi officiis quae quaerat
+obcaecati neque hic velit provident voluptatum autem
+labore!`,
+    },
+    {
+        date: "28 April 2021",
+        details: `details Lorem ipsum, dolor sit amet consectetur
+adipisicing elit. Eligendi officiis quae quaerat
+obcaecati neque hic velit provident voluptatum autem
+labore!`,
+    },
+    {
+        date: "28 April 2021",
+        details: `details Lorem ipsum, dolor sit amet consectetur
+adipisicing elit. Eligendi officiis quae quaerat
+obcaecati neque hic velit provident voluptatum autem
+labore!`,
+    },
+    {
+        date: "28 April 2021",
+        details: `details Lorem ipsum, dolor sit amet consectetur
+adipisicing elit. Eligendi officiis quae quaerat
+obcaecati neque hic velit provident voluptatum autem
+labore!`,
+    },
+];
+
+const pushNotice = document.getElementById("pushNotice");
+
+let display = datas2.map(function (items) {
+    return `<div class="col-sm-6 my-3 col-12">
+    <div class="notice-cover">
+        <div class="notice-date">
+            ${items.date}
+            <svg
+                data-v-abe9ddd2=""
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="thumbtack"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                class="fa-fw mr-2 svg-inline--fa fa-thumbtack fa-w-12 pin__icon"
+                style="max-width: 1.7rem"
+            >
+                <path
+                    d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z"
+                ></path>
+            </svg>
+        </div>
+        <div class="notice-details">
+           ${items.details}
+        </div>
+        <div class="notice-button">
+            <button>Download</button>
+        </div>
+    </div>
+    </div>`;
+});
+
+display = display.join("");
+pushNotice.innerHTML = display;
