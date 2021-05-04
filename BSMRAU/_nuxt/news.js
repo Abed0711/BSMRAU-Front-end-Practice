@@ -7,6 +7,7 @@ const data2 = [
 adipisicing elit. Eligendi officiis quae quaerat
 obcaecati neque hic velit provident voluptatum autem
 labore!`,
+        link: ``,
     },
     {
         date: "28 April 2021",
@@ -14,6 +15,7 @@ labore!`,
 adipisicing elit. Eligendi officiis quae quaerat
 obcaecati neque hic velit provident voluptatum autem
 labore!`,
+        link: ``,
     },
     {
         date: "28 April 2021",
@@ -21,6 +23,7 @@ labore!`,
 adipisicing elit. Eligendi officiis quae quaerat
 obcaecati neque hic velit provident voluptatum autem
 labore!`,
+        link: ``,
     },
     {
         date: "28 April 2021",
@@ -28,6 +31,7 @@ labore!`,
 adipisicing elit. Eligendi officiis quae quaerat
 obcaecati neque hic velit provident voluptatum autem
 labore!`,
+        link: ``,
     },
 ];
 
@@ -125,7 +129,7 @@ let Notice = function (items) {
            ${items.details}
         </div>
         <div class="notice-button">
-            <button>Download</button>
+            <button href=${items.link}>Download</button>
         </div>
     </div>
     </div>`;
