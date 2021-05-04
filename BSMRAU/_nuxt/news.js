@@ -129,7 +129,7 @@ let Notice = function (items) {
            ${items.details}
         </div>
         <div class="notice-button">
-            <button href=${items.link}>Download</button>
+            <a href=${items.link}>Download</a>
         </div>
     </div>
     </div>`;
