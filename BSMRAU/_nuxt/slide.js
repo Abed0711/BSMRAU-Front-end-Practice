@@ -110,30 +110,33 @@ function displayMenuItems() {
 
     window.addEventListener("resize", function () {
         size = card[0].clientWidth + 10;
+        transition();
     });
 
-    slideCards.addEventListener("mouseover", function () {
-        clearInterval(timeout);
-    });
-    slideCards.addEventListener("mouseout", function () {
-        timeout = setInterval(change, 2000);
-    });
+    function transition() {
+        slideCards.addEventListener("mouseover", function () {
+            clearInterval(timeout);
+        });
+        slideCards.addEventListener("mouseout", function () {
+            timeout = setInterval(change, 2000);
+        });
 
+        // TRANSITIONEND
+
+        slideCards.addEventListener("transitionend", () => {
+            if (allCards[count].id === "first_clone") {
+                slideCards.style.transition = "none";
+                count = card.length - count;
+                slideCards.style.transform =
+                    "translateX(" + -size * count + "px)";
+            }
+        });
+    }
+    transition();
     // CHANGE
-
     function change() {
         slideCards.style.transition = "transform 0.5s ease";
         count++;
         slideCards.style.transform = "translateX(" + -size * count + "px)";
     }
-
-    // TRANSITIONEND
-
-    slideCards.addEventListener("transitionend", () => {
-        if (allCards[count].id === "first_clone") {
-            slideCards.style.transition = "none";
-            count = card.length - count;
-            slideCards.style.transform = "translateX(" + -size * count + "px)";
-        }
-    });
 }
