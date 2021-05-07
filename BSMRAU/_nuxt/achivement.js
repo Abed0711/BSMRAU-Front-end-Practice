@@ -1,4 +1,4 @@
-const data7 = [
+const data8 = [
     {
         id: 1,
         compName: "5th Bangladesh University Games Athletics (Male)",
@@ -43,7 +43,7 @@ let gallery = function (items) {
     return `<tr>
     <th scope="row">${items.id}</th>
     <td>${items.compName}</td>
-    <td>${items.data}</td>
+    <td>${items.date}</td>
     <td>${items.venue}</td>
     <td><span>${items.champ}</span></td>
     <td><!----></td>
@@ -52,4 +52,4 @@ let gallery = function (items) {
 `;
 };
 
-template(data7, gallery, achive);
+template(data8, gallery, achive);

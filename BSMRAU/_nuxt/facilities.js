@@ -174,7 +174,7 @@ const template = function (items, html, push_div) {
 };
 
 for (let i = 0; i < data5.length; i++) {
-    if (i % 2 != 0 || i == 0) {
+    if (i % 2 != 0) {
         template(data5[i], odd, facilityDiv);
     } else {
         template(data5[i], even, facilityDiv);

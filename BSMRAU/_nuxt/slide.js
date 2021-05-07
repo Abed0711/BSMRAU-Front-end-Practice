@@ -43,6 +43,34 @@ const datas = [
         teacherName: "Prof. Dr. A. K. M. Aminul Islam",
         pdf: "",
     },
+    {
+        slideImage: "1.jpg",
+        heading: "Book Of Research Abstract 2018",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
+        pdf: "",
+    },
+    {
+        slideImage: "2.jpg",
+        heading: "Book Of Research Abstract 2018-2019",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
+        pdf: "",
+    },
+    {
+        slideImage: "3.jpg",
+        heading: "Book Of Research Abstract 2019",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
+        pdf: "",
+    },
+    {
+        slideImage: "2.jpg",
+        heading: "Book Of Research Abstract 2018-2019",
+        teacherImage: "Photo-Aminul-Sir-2-x-2-Edit-01-PP-150x150.jpg",
+        teacherName: "Prof. Dr. A. K. M. Aminul Islam",
+        pdf: "",
+    },
     // { slideImage: "", heading: "", teacherImage: "", teacherName: "" },
     // { slideImage: "", heading: "", teacherImage: "", teacherName: "" },
     // { slideImage: "", heading: "", teacherImage: "", teacherName: "" },
@@ -85,21 +113,6 @@ function displayMenuItems() {
     slideCards.innerHTML = displayMenu;
     card = document.querySelectorAll(".card-slide");
 
-    const firstClone = card[0].cloneNode(true);
-    const secondClone = card[1].cloneNode(true);
-    const thirdClone = card[2].cloneNode(true);
-    const fourthClone = card[3].cloneNode(true);
-
-    firstClone.id = "first_clone";
-    secondClone.id = "second_clone";
-    thirdClone.id = "third_clone";
-    fourthClone.id = "fourth_clone";
-
-    slideCards.append(firstClone);
-    slideCards.append(secondClone);
-    slideCards.append(thirdClone);
-    slideCards.append(fourthClone);
-
     const allCards = document.querySelectorAll(".card-slide");
 
     //animation
@@ -122,9 +135,9 @@ function displayMenuItems() {
         });
 
         // TRANSITIONEND
-
+        console.log(allCards[count]);
         slideCards.addEventListener("transitionend", () => {
-            if (allCards[count].id === "first_clone") {
+            if (allCards[count].id == "A6") {
                 slideCards.style.transition = "none";
                 count = card.length - count;
                 slideCards.style.transform =
