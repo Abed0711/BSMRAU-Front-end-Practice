@@ -733,7 +733,7 @@ const Header = function (data7) {
                                     data-v-6e78c3c4=""
                                 >
                                     <a
-                                        href="/departments"
+                                        href=${data7.dept}
                                         class="sublist__item__val cPointer"
                                         data-v-6e78c3c4=""
                                     >
@@ -745,7 +745,7 @@ const Header = function (data7) {
                                     data-v-6e78c3c4=""
                                 >
                                     <a
-                                        href="/academics/institutes"
+                                        href=${data7.institutes}
                                         class="sublist__item__val cPointer"
                                         data-v-6e78c3c4=""
                                     >
@@ -757,7 +757,7 @@ const Header = function (data7) {
                                     data-v-6e78c3c4=""
                                 >
                                     <a
-                                        href="/pages/Research-Laboratory"
+                                        href=${data7.Relab}
                                         class="sublist__item__val cPointer"
                                         data-v-6e78c3c4=""
                                     >
@@ -769,7 +769,7 @@ const Header = function (data7) {
                                     data-v-6e78c3c4=""
                                 >
                                     <a
-                                        href="/calendar"
+                                        href=${data7.calender}
                                         class="sublist__item__val cPointer"
                                         data-v-6e78c3c4=""
                                     >
@@ -781,7 +781,7 @@ const Header = function (data7) {
                                     data-v-6e78c3c4=""
                                 >
                                     <a
-                                        href="/offices/librarian"
+                                        href=${data7.library}
                                         class="sublist__item__val cPointer"
                                         data-v-6e78c3c4=""
                                     >
@@ -1635,18 +1635,18 @@ const Header = function (data7) {
             ></a>
             <ul class="sidebar__sub-list strans sclosed" data-v-fff37be6="">
                 <li class="sidebar__sub-list--item" data-v-fff37be6="">
-                    <a href="/faculties" class="d-block" data-v-fff37be6="">
+                    <a href=${data7.faculties} class="d-block" data-v-fff37be6="">
                         Faculties
                     </a>
                 </li>
                 <li class="sidebar__sub-list--item" data-v-fff37be6="">
-                    <a href="/departments" class="d-block" data-v-fff37be6="">
+                    <a href=${data7.dept} class="d-block" data-v-fff37be6="">
                         Departments
                     </a>
                 </li>
                 <li class="sidebar__sub-list--item" data-v-fff37be6="">
                     <a
-                        href="/academics/institutes"
+                        href=${data7.institutes}
                         class="d-block"
                         data-v-fff37be6=""
                     >
@@ -1655,7 +1655,7 @@ const Header = function (data7) {
                 </li>
                 <li class="sidebar__sub-list--item" data-v-fff37be6="">
                     <a
-                        href="/pages/Research-Laboratory"
+                        href=${data7.Relab}
                         class="d-block"
                         data-v-fff37be6=""
                     >
@@ -1663,13 +1663,13 @@ const Header = function (data7) {
                     </a>
                 </li>
                 <li class="sidebar__sub-list--item" data-v-fff37be6="">
-                    <a href="/calendar" class="d-block" data-v-fff37be6="">
+                    <a href=${data7.calender} class="d-block" data-v-fff37be6="">
                         Calendar
                     </a>
                 </li>
                 <li class="sidebar__sub-list--item" data-v-fff37be6="">
                     <a
-                        href="/offices/librarian"
+                        href=${data7.library}
                         class="d-block"
                         data-v-fff37be6=""
                     >

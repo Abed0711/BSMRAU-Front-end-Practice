@@ -6,5 +6,11 @@ const data7 = [
         logo: "../logo/hl.png",
         logoHref: "../",
         mslogo: "../logo/BSMRAU-Logo-White.png",
+        faculties: "../faculties/index.html",
+        dept: "../departments.html",
+        institutes: "../academics/institutes.html",
+        Relab: "../pages/Research-Laboratory.htm",
+        calender: "../calendar.html",
+        library: "../offices/librarian.html",
     },
 ];
