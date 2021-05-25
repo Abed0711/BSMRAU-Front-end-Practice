@@ -1,7 +1,6 @@
 // Datas For Notice Section //
 
-const data2 = [
-    {
+const data2 = [{
         date: "28 April 2021",
         details: `details Lorem ipsum, dolor sit amet consectetur
 adipisicing elit. Eligendi officiis quae quaerat
@@ -37,53 +36,38 @@ labore!`,
 
 // Datas For News three items Section //
 
-const data3 = [
-    {
-        headlinelink: `/news/যবিপ্রবি-উপাচার্যের-শাশুড়ির-ইন্তেকাল`,
-        headline: `যবিপ্রবি উপাচার্যের শাশুড়ির ইন্তেকাল`,
-        image: `1.jpg`,
-        newsSubTitle: "Campus News",
-        details: `(যশোর: ২৮ এপ্রিল, ২০২১ খ্রি.): যশোর বিজ্ঞান
-        ও প্রযুক্তি বিশ্ববিদ্যালয়ের (যবিপ্রবি)
-        উপাচার্য অধ্যাপক ড. মোঃ আনোয়ার হোসেনে…`,
+const data3 = [{
+        headlinelink: ``,
+        headline: ``,
+        image: ``,
+        newsSubTitle: "",
+        details: ``,
     },
     {
-        headlinelink: `/news/যবিপ্রবির-সিএসই-বিভাগের-আয়োজনে‘-বর্ষবরণ-প্রোগ্রামিং-কনটেস্ট-১৪২৮’অনুষ্ঠিত`,
-        headline: `  যবিপ্রবির সিএসই বিভাগের আয়োজনে‘ বর্ষবরণ
-        প্রোগ্রামিং কনটেস্ট ১৪২৮’ অনুষ্ঠিত`,
-        image: `https://static.just.edu.bd/images/public/news/1618759384581_1200.jpeg`,
-        newsSubTitle: "Campus News",
-        details: ` (যশোর: ১৮ এপ্রিল, ২০২১ খ্রি.): প্রোগ্রামিংয়ে
-        দক্ষতা বৃদ্ধি, মেধা ও জ্ঞানভিত্তিক প্রজন্ম
-        গড়ে তোলার লক্ষ্যে যশোর বিজ্ঞান ও…`,
+        headlinelink: ``,
+        headline: `  `,
+        image: ``,
+        newsSubTitle: "",
+        details: ` `,
     },
     {
-        headlinelink: `/news/যবিপ্রবিতে-নানা-আয়োজনে-স্বাধীনতার-সুবর্ণজয়ন্তী-উদযাপন`,
-        headline: `যবিপ্রবিতে নানা আয়োজনে স্বাধীনতার
-        সুবর্ণজয়ন্তী উদযাপন`,
-        image: `https://static.just.edu.bd/images/public/news/1616765287904_1200.jpeg`,
-        newsSubTitle: "Campus News",
-        details: `  (যশোর: ২৬ মার্চ, ২০২১ খ্রি.): জাতির পিতা
-        বঙ্গবন্ধু শেখ মুজিবুর রহমানের ম্যুরালে
-        পুষ্পস্তবক অর্পণ, শিক্ষক-শিক্ষার্থী, কর্…`,
+        headlinelink: ``,
+        headline: ``,
+        image: ``,
+        newsSubTitle: "",
+        details: ` `,
     },
 ];
 
 // Datas For New Focus Section //
 
-const data4 = [
-    {
-        img: `https://static.just.edu.bd/images/public/news/1619942258674_1200.jpeg`,
-        subtitle: `  জিনোম সেন্টারের পাশে কাজী নাবিল আহমেদ`,
-        newsTitle: `যবিপ্রবির টিএসসি ভবনের ঊর্ধ্বমুখী সম্প্রসারণ কাজের
-        উদ্বোধন`,
-        newsTitleLink: `/news/যবিপ্রবির-টিএসসি-ভবনের-ঊর্ধ্বমুখী-সম্প্রসারণ-কাজের-উদ্বোধন`,
-        details: ` (যশোর: ২ মে, ২০২১ খ্রি.): শিক্ষার্থীদের সামাজিক ও
-        সাংস্কৃতিক কার্যক্রম আরও বেগবান করতে যশোর বিজ্ঞান ও
-        প্রযুক্তি বিশ্ববিদ্যালয়ের (যবিপ্রবি) ছাত্র-শিক্ষক
-        মিলনায়তনের (টিএসসি) বর্তমান ভবনটি আরও সম্প্রসারিত হচ্ছে।`,
-    },
-];
+const data4 = [{
+    img: ``,
+    subtitle: `  `,
+    newsTitle: ``,
+    newsTitleLink: ``,
+    details: ``,
+}, ];
 
 // Div Notice //
 
@@ -94,8 +78,8 @@ const pushNotice = document.getElementById("pushNotice");
 const Fnews = document.getElementById("focus-news");
 const AllNews = document.getElementById("AllNews");
 
-const template = function (data, html, push_div) {
-    let news = data.map(function (items) {
+const template = function(data, html, push_div) {
+    let news = data.map(function(items) {
         return html(items);
     });
 
@@ -103,7 +87,7 @@ const template = function (data, html, push_div) {
     push_div.innerHTML = news;
 };
 
-let Notice = function (items) {
+let Notice = function(items) {
     return `<div class="col-sm-6 my-3 col-12">
     <div class="notice-cover">
         <div class="notice-date">
@@ -135,7 +119,7 @@ let Notice = function (items) {
     </div>`;
 };
 
-let htmlAllNews = function (items) {
+let htmlAllNews = function(items) {
     return `<div data-v-226c2264="" class="col-md-4 mb-5 card">
     <a
         href=${items.headline}
@@ -176,7 +160,7 @@ let htmlAllNews = function (items) {
     </div>`;
 };
 
-let focusNews = function (items) {
+let focusNews = function(items) {
     return `<div data-v-226c2264="" class="col-md-4">
     <img
         data-v-226c2264=""
